@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AKASH PROFILE</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <base href="Digital Portfolio.html" target="_blank">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+
+.akash {
+    text-align: center;
+    border: 3px solid #001b22;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    background-color: #0f5b6e;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color:#fff;
+    margin-top: 1rem;
+}
+
+.sub{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#0d3a43;
+}
+
+nav {
+    background-color:#276c7d;
+    color:#fff;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color:#fff
+      
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0.5pc;
+}
+
+nav ul li {
+    display: inline;
+    padding:  10px;
+}
+
+.sec-content {
+    background-color: #25515c;
+    padding: 2rem;
+    margin: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color:#fff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    color: #ffffff;
+      
+}
+
+ul {
+    padding-left: 20px;
+}
+
+a:link {
+    color: white;
+}
+
+a:hover {
+    color: yellow;
+}
+
+a:active {
+    color: blue;
+}
+
+.link{
+    color: #fff;
+}
+
+</style>
+
+<body>
+
+    <div class="akash">
+        <h1>AKASH J</h1>
+        <p class="sub">Graduate with Bachelor's Degree in Computer Appliactions</p>
+    </div>  
+    
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#Certifications">Certifications</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="sec-content">
+            <h2>About Me</h2>
+            <p>Hai all! <br>Hello, I'm Akash J, a dedicated graduate with a Bachelor's degree in Computer
+                 Application from SRM Trichy Arts and Science College, affiliated with Bharathidasan University, Trichy. 
+                 As a beginner in the world of technology, I have developed foundational skills in coding languages such as C, C++,
+                  Java, MySQL, PHP, HTML, and CSS. I am passionate about learning and eager to explore opportunities within the IT industry, 
+                  particularly in the developer field. Let's connect and explore how we can collaborate in the exciting realm of technology!</p>
+        </div>
+    </section>
+
+
+    <section id="education">
+        <div class="sec-content">
+            <h2>Education</h2>
+            <ul>
+                <li><h3>Degree</h3></li>
+                    <ul>
+                        <li>SRM Trichy Arts and Science College,Trichy (Affiliated to Bharathidasan University, Trichy) </li>
+                        <li>Percentage: 84</li>
+                        <li>Passed out: 2024</li>
+                    </ul>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="sec-content">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming in C</li>
+                <li>Programming in C++</li>
+                <li>Programming in Java</li>
+                <li>SQL</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="Certifications">
+        <div class="sec-content">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Programming in C from Great Learning <a class="link" href="https://www.mygreatlearning.com/certificate/CXIALDXV"> [View Certificate]</a></li>
+                <li>Programming in C++ from Great Learning <a class="link" href="https://www.mygreatlearning.com/certificate/HLYNGPTY"> [View Certificate]</a></li>
+                <li>Programming in Java from Great Learning <a class="link" href="https://www.mygreatlearning.com/certificate/LTJADDTA"> [View Certificate]</a></li>
+                <li>OOPs in Java from Great Learning <a class="link" href="https://www.mygreatlearning.com/certificate/HLYNGPTY"> [View Certificate]</a></li>
+            </ul>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>Ph: 9842556217</p>
+        <p>E-mail: akash.bca.grad@gmail.com</p>
+        <p>&copy; 2023 AKASH J</p><br>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click',function(e){
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if(targetElement){
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
